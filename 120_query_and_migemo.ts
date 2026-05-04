@@ -1,7 +1,7 @@
 import { CompactDictionary, Migemo } from 'jsmigemo';
 import fs from 'fs';
 import { readdir, stat } from 'fs/promises';
-import { join } from "path";
+import { join , parse } from "path";
 
 const querytext = Bun.argv[2] ?? "";
 const querys = querytext.split(/\s+/);
@@ -50,6 +50,7 @@ for (const file of files){
     continue;
   }
 
-  const outlog = file + "\t" + filefullpath;
+  //const outlog = file + "\t" + filefullpath;
+  const outlog = file + "\t" + filefullpath + "\t" + parse(file).name;
   console.log(outlog);
 }
