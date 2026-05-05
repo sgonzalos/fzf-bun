@@ -9,7 +9,7 @@ wezterm.on('gui-startup', function(cmd)
     args = {
       "bun",
       "run",
-      "C:/Users/Satoshi/Documents/bun/fzf-migemo/121_main.ts",
+      "*****.ts",
     },
      position = {
       x = 20,
