@@ -5,19 +5,9 @@ local wezterm = require 'wezterm'
 local config = wezterm.config_builder()
 
 wezterm.on('gui-startup', function(cmd)
-  wezterm.mux.spawn_window({
-    args = {
-      "bun",
-      "run",
-      "*****.ts",
-    },
-     position = {
-      x = 20,
-      y = 20,
-    },
-  })
+  local tab, pane, window = wezterm.mux.spawn_window(cmd or{})
+  window:gui_window():set_position(50, 50)
 end)
-
 -- This is where you actually apply your config choices.
 
 -- For example, changing the initial geometry for new windows:
@@ -43,21 +33,7 @@ config.window_background_gradient = {
   interpolation = 'Linear',
   blend = 'Rgb',
 }
-
 --config.window_decorations = "RESIZE"
 
-config.window_frame = {
-  inactive_titlebar_bg = '#353535',
-  --active_titlebar_bg = '#2b2042',
-  active_titlebar_bg = '#ffffff',
-  inactive_titlebar_fg = '#cccccc',
-  active_titlebar_fg = '#ffffff',
-  inactive_titlebar_border_bottom = '#2b2042',
-  active_titlebar_border_bottom = '#2b2042',
-  button_fg = '#cccccc',
-  button_bg = '#2b2042',
-  button_hover_fg = '#ffffff',
-  button_hover_bg = '#3b3052',
-}
 -- Finally, return the configuration to wezterm:
 return config
