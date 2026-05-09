@@ -1,0 +1,27 @@
+- name: "設計1"
+  cmd:
+    - "cmd"
+    - "/c"
+    - "echo"
+    - "日本語"
+    - "|"
+    - "clip"
+
+- name: "機械2"
+  cmd:
+    - "explorer"
+    - "C:\\Users\\XXXXXX\\Desktop\\XXXXXXXXXXXXXX.pdf"
+
+- name: "Mery"
+  cmd:
+    - "C:\\Users\\XXXXXX\\Desktop\\OLD_PC\\230324_C\\Documents\\001_software\\Mery_3.8.2\\Mery.exe"
+- name: "PDF"
+  cmd:
+    - "cmd"
+    - "/c"
+    - "C:\\Users\\XXXXXX\\Desktop\\XXXXXXXXXXXXXX.pdf"
+
+- name: "Powershell"
+  cmd:
+    - "explorer"
+    - "C:\\Users\\XXXXXX\\Desktop\\aaa bbb\\260222_yakiniku.xlsx"
