@@ -10,18 +10,33 @@
 - name: "機械2"
   cmd:
     - "explorer"
-    - "C:\\Users\\XXXXXX\\Desktop\\XXXXXXXXXXXXXX.pdf"
+    - "C:\\Users\\XXXXXXXX\\Desktop\\AAAAAAAAA_202401.pdf"
 
 - name: "Mery"
   cmd:
-    - "C:\\Users\\XXXXXX\\Desktop\\OLD_PC\\230324_C\\Documents\\001_software\\Mery_3.8.2\\Mery.exe"
+    - "C:\\Users\\XXXXXXXX\\Desktop\\OLD_PC\\230324_C\\Documents\\001_software\\Mery_3.8.2\\Mery.exe"
 - name: "PDF"
   cmd:
     - "cmd"
     - "/c"
-    - "C:\\Users\\XXXXXX\\Desktop\\XXXXXXXXXXXXXX.pdf"
+    - "C:\\Users\\XXXXXXXX\\Desktop\\AAAAAAAAA_202401.pdf"
 
 - name: "Powershell"
   cmd:
     - "explorer"
-    - "C:\\Users\\XXXXXX\\Desktop\\aaa bbb\\260222_yakiniku.xlsx"
+    - "C:\\Users\\XXXXXXXX\\Desktop\\aaa bbb\\260222_yakiniku.xlsx"
+
+- name: "ahk clip"
+  cmd:
+    - "C:\\Program Files\\AutoHotkey\\v2\\AutoHotkey64.exe"
+    - "C:\\Users\\XXXXXXXX\\Desktop\\ahk\\260510_clipboard\\ClipboardSet.ahk"
+    - 日本語テスト2
+      `n日本語ああああ
+
+- name: "ahk clip"
+  cmd:
+    - "C:\\Program Files\\AutoHotkey\\v2\\AutoHotkey64.exe"
+    - "C:\\Users\\XXXXXXXX\\Desktop\\ahk\\260510_clipboard\\ClipboardSet.ahk"
+    - 123
+      `n345
+
